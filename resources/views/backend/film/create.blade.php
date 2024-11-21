@@ -10,7 +10,7 @@ Tambah Data Casts
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Tambah Data Cast Baru</h3>
+                    <h3 class="box-title">Tambah Data Film Baru</h3>
                 </div>
                 <!-- /.box-header -->
 
