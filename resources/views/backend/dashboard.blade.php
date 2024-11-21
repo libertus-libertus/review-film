@@ -1,72 +1,39 @@
 @extends('backend.layouts.master')
 @section('title')
-Admin Dashboard
+@auth
+Bantuan
+@else
+LINStation
+@endauth
 @endsection
 
 @section('subTitle')
-Dashboard
+Bantuan
 @endsection
 
 @section('content')
 <section class="content">
     <!-- Info boxes -->
     <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+        <div class="col-xs-12">
+            <p>Untuk melihat lebih jauh terkait bagaimana cara melakukan review film di website kami (website LINStation), maka Anda terlebih dahulu <strong>LOGIN</strong> atau <strong>DAFTAR</strong> sebagai user baru di platform kami.</p>
 
-                <div class="info-box-content">
-                    <span class="info-box-text">CPU Traffic</span>
-                    <span class="info-box-number">90<small>%</small></span>
-                </div>
-                <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
+            <h4>Cara daftar di platform LINStation</h4>
+            <ol>
+                <li>Klik tombol daftar atau klik <a href="{{ route('register') }}">Daftar disini</a> untuk kemudian diarahkan ke halaman daftar</li>
+                <li>Untuk datanya sendirinya bisa disesuaikan dengan permintaan form yang diminta</li>
+                <li>Pastikan seluruh data dan password anda benar dan tidak keliru</li>
+                <li>Seteleh semuanya berhasil di register, maka akan diarahkan secara otomatis di halaman beranda yang berbeda dengan halaman sebelumnya saat masih menjadi pengunjung biasa.</li>
+            </ol>
+
+            <h4>Cara login di platform LINStation</h4>
+            <ol>
+                <li>Klik tombol login atau klik <a href="{{ route('login') }}">Login disini</a> untuk kemudian diarahkan ke halaman login</li>
+                <li>Untuk datanya sendiri hanya dibutuhkan email dan password saja.</li>
+                <li>Tapi untuk email dan password, gunakan email dan password yang Anda registrasikan</li>
+                <li>Seteleh semuanya berhasil di inputkan, maka tekan tombol login agar diarahkan secara otomatis di halaman beranda yang berbeda dengan halaman sebelumnya saat masih menjadi pengunjung biasa.</li>
+            </ol>
         </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-                <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
-
-                <div class="info-box-content">
-                    <span class="info-box-text">Likes</span>
-                    <span class="info-box-number">41,410</span>
-                </div>
-                <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-        <!-- fix for small devices only -->
-        <div class="clearfix visible-sm-block"></div>
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-                <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
-
-                <div class="info-box-content">
-                    <span class="info-box-text">Sales</span>
-                    <span class="info-box-number">760</span>
-                </div>
-                <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-                <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
-
-                <div class="info-box-content">
-                    <span class="info-box-text">New Members</span>
-                    <span class="info-box-number">2,000</span>
-                </div>
-                <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
     </div>
     <!-- /.row -->
 </section>

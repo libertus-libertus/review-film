@@ -18,10 +18,12 @@ Seluruh Data Genres
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
+                    @auth
                     <a href="{{ route('genre.create') }}" class="btn btn-xs btn-info">
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         Tambah Data
                     </a>
+                    @endauth
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -30,10 +32,12 @@ Seluruh Data Genres
                             <tr>
                                 <th width="7%">#</th>
                                 <th>Name</th>
+                                @auth
                                 <th class="text-center">
                                     <i class="fa fa-cogs" aria-hidden="true"></i>
                                     Actions
                                 </th>
+                                @endauth
                             </tr>
                         </thead>
                         <tbody>
@@ -41,6 +45,7 @@ Seluruh Data Genres
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->name }}</td>
+                                @auth
                                 <td class="text-center">
                                     <div class="btn-group">
                                         <form action="{{ route('genre.destroy', $item->id) }}" method="POST"
@@ -61,6 +66,7 @@ Seluruh Data Genres
                                         </form>
                                     </div>
                                 </td>
+                                @endauth
                             </tr>
                             @endforeach
                         </tbody>

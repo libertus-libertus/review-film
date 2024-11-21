@@ -8,10 +8,16 @@
                     alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                @auth
+                    <p>{{ Auth()->user()->name }}</p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> {{ Auth()->user()->email }}</a>
+                @else
+                    <p>Anda Belum Login</p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> Pengunjung Website</a>
+                @endauth
             </div>
         </div>
+
         <!-- search form -->
         <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
@@ -24,19 +30,26 @@
             </div>
         </form>
         <!-- /.search form -->
-        <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li>
-                <a href="{{ url('/') }}">
+                <a href="{{ route('film.index') }}">
                     <i class="fa fa-th" aria-hidden="true"></i>
-                    <span>Dashboard</span>
+                    <span>Halaman Beranda</span>
                 </a>
             </li>
             <li class="header">MASTER DATA</li>
+            @auth
             <li>
                 <a href="{{ route('cast.index') }}">
                     <i class="fa fa-cubes" aria-hidden="true"></i>
                     <span>Cast</span>
+                </a>
+            </li>
+            @endauth
+            <li>
+                <a href="{{ route('film.index') }}">
+                    <i class="fa fa-film" aria-hidden="true"></i>
+                    <span>Trending Movies</span>
                 </a>
             </li>
             <li>
@@ -45,24 +58,25 @@
                     <span>Genre</span>
                 </a>
             </li>
-            <li>
-                <a href="{{ route('film.index') }}">
-                    <i class="fa fa-film" aria-hidden="true"></i>
-                    <span>Film</span>
-                </a>
-            </li>
             <li class="header">PENGATURAN</li>
+            @auth
             <li>
                 <a href="#">
                     <i class="fa fa-cogs" aria-hidden="true"></i>
                     <span>Settings</span>
                 </a>
             </li>
+            @endauth
+            <li>
+                <a href="{{ url('/') }}">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span>Bantuan</span>
+                </a>
+            </li>
             <li>
                 <a href="https://github.com/libertus-libertus/review-film">
                     <i class="fa fa-github" aria-hidden="true"></i>
-                    {{-- <i class="fa fa-book"></i>  --}}
-                    <span>Github Documentation</span>
+                    <span>Documentation</span>
                 </a>
             </li>
         </ul>

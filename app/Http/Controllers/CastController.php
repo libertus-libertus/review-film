@@ -25,12 +25,12 @@ class CastController extends Controller
             'name' => 'required|string|max:255',
             'age' => 'required|integer|min:0',
             'bio' => 'required|string'
-        ], 
+        ],
         [
             'name.required' => 'Nama wajib diisi!',
             'age.required' => 'Umur wajib diisi!',
             'age.integer' => 'Umur harus berupa angka!',
-            'bio.required' => 'Bio wajib diisi!', 
+            'bio.required' => 'Bio wajib diisi!',
         ]);
 
         Cast::create([
@@ -60,7 +60,7 @@ class CastController extends Controller
             'name' => 'required|string|max:255',
             'age' => 'required|integer|min:0',
             'bio' => 'required|string'
-        ], 
+        ],
         [
             'name.required' => 'Nama wajib diisi!',
             'age.required' => 'Umur wajib diisi!',
