@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('genre.index') }}">
                     <i class="fa fa-file-movie-o" aria-hidden="true"></i>
                     <span>Genre</span>
                 </a>

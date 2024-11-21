@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CastController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GenreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::resource('/cast', CastController::class);
+Route::resource('/genre', GenreController::class);
