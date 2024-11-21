@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('film.index') }}">
                     <i class="fa fa-film" aria-hidden="true"></i>
                     <span>Film</span>
                 </a>

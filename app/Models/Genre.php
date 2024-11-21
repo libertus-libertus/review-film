@@ -9,5 +9,10 @@ class Genre extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["name"];
+    protected $fillable = ['name'];
+
+    // Relasi ke tabel films (opsional)
+    public function films() {
+        return $this->hasMany(Film::class, 'genre_id', 'id');
+    }
 }
