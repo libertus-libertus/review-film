@@ -67,6 +67,10 @@ Direkomendasikan untukmu
                                         <i class="fa fa-eye" aria-hidden="true"></i>
                                         Detail
                                     </a>
+                                    <a href={{ route('review.create') }}" class="btn btn-xs btn-warning btn-flat">
+                                        <i class="fa fa-history" aria-hidden="true"></i>
+                                        Review
+                                    </a>
                                     @endauth
                                 </div>
                             </div>

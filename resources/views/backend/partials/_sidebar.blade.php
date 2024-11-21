@@ -58,6 +58,12 @@
                     <span>Genre</span>
                 </a>
             </li>
+            <li>
+                <a href="{{ route('review.index') }}">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                    <span>Review</span>
+                </a>
+            </li>
             <li class="header">PENGATURAN</li>
             @auth
             <li>
@@ -67,6 +73,12 @@
                 </a>
             </li>
             @endauth
+            <li>
+                <a href="#">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <span>Manajemen Profile</span>
+                </a>
+            </li>
             <li>
                 <a href="{{ url('/') }}">
                     <i class="fa fa-info-circle" aria-hidden="true"></i>

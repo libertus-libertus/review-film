@@ -3,11 +3,11 @@ by Rezky putra akkif
 Soal Final Project
 menyelesaikan semua fitur pada aplikasi review film data tugasnya
 
-Buat CRUD untuk Halaman Genre dan Film (40 point)
-Buat Auth (Login & Register) & middleware halaman Genre dan middleware halaman Film kecuali show dan index (10 Point)
-Buat Relasi antar table sesuai dengan erd di setiap modelnya (15 Point)
-buat List film dari relasi , di halaman detail genre
-tampilakan nama genre di halaman film
+Buat CRUD untuk Halaman Genre dan Film (40 point) - SELESAI
+Buat Auth (Login & Register) & middleware halaman Genre dan middleware halaman Film kecuali show dan index (10 Point) - SELESAI
+Buat Relasi antar table sesuai dengan erd di setiap modelnya (15 Point) - SELESAI
+buat List film dari relasi , di halaman detail genre - SELESAI
+tampilakan nama genre di halaman film - SELESAI
 Buat Fitur tambah Review dan List Review pada halaman detail film (10 Point)
 Deploy Laravel (10 Point)
 
@@ -29,8 +29,6 @@ Video terdiri dari :
 
 Video dibuat menggunakan screen recorder pada laptop ataupun Zoom Meeting di record.
 Video di set public
-
-
 
 Sharing ke Sosial Media (5 point)
 Siilahkan Share link video youtube ke salah satu platform media sosial nya : linkedin. IG, Tiktok, Twitter(X).
