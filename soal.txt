@@ -1,0 +1,44 @@
+Soal Final Project
+by Rezky putra akkif
+Soal Final Project
+menyelesaikan semua fitur pada aplikasi review film data tugasnya
+
+Buat CRUD untuk Halaman Genre dan Film (40 point)
+Buat Auth (Login & Register) & middleware halaman Genre dan middleware halaman Film kecuali show dan index (10 Point)
+Buat Relasi antar table sesuai dengan erd di setiap modelnya (15 Point)
+buat List film dari relasi , di halaman detail genre
+tampilakan nama genre di halaman film
+Buat Fitur tambah Review dan List Review pada halaman detail film (10 Point)
+Deploy Laravel (10 Point)
+
+
+Upload Video di Youtube (10 point)
+
+Silahkan Membuat Video Simulasi Aplikasi.
+Video diupload ke youtube dengan judul
+"Final Project Laravel Sanbercode Batch 60 : xxxxjudul proyekxxxx"
+Tambahkan tag pada deskripsi
+#Laravel #BootcampDigitalSkill #SanbercodeBatch60
+
+Video terdiri dari :
+- Pengenalan diri
+- Judul Proyek Akhir
+- Fitur fitur yang dikerjakan
+- Demo Fitur Fitur
+- Kesimpulan
+
+Video dibuat menggunakan screen recorder pada laptop ataupun Zoom Meeting di record.
+Video di set public
+
+
+
+Sharing ke Sosial Media (5 point)
+Siilahkan Share link video youtube ke salah satu platform media sosial nya : linkedin. IG, Tiktok, Twitter(X).
+Submit link share nya disini.
+
+Tambahkan Tag
+#Laravel #BootcampDigitalSkill #SanbercodeBatch60
+
+
+
+Batas Pengerjaan Final Project Minggu 24 November 2024 jam 23:59
